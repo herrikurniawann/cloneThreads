@@ -3,5 +3,60 @@
   padding: 0;
   scroll-behavior: smooth;
   background: #111111;
+  color: #ffffff;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  background: #111111;
+  z-index: 999;
+}
+
+.navbar-left,
+.navbar-right,
+.navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #ffffff;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.navbar-search {
+  padding: 8px 15px;
+  border-radius: 20px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
