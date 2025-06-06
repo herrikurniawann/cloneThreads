@@ -1,12 +1,14 @@
 import Navbar from "../components/navbar";
-import FooterNav from "../components/footerNav";
+import SideNav from "../components/sidebar";
+import MainContentOne from "./mainContentOne";
 
 function Home() {
   return (
     <>
       <div className="app-container">
         <Navbar />
-        <FooterNav />
+        <SideNav />
+        <MainContentOne/>
       </div>
     </>
   );

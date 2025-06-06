@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircleMore } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -11,10 +12,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <a href="#profile" className="navbar-link">
-          Profile
+          <MessageCircleMore />
         </a>
         <a href="#messages" className="navbar-link">
-          Messages
+          <img src="./assets/profile.jpg" />
         </a>
       </div>
     </nav>
