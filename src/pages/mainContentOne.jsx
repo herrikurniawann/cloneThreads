@@ -1,20 +1,60 @@
-const MainContentOne = () => {
+import React from 'react';
+import ThreadPost from '../components/threadPost.jsx';
+
+const MainContent = () => {
+  const posts = [
+    {
+      id: 1,
+      user: {
+        username: 'dani_ismantoko',
+        time: '16 jam',
+        avatar: 'assets/profile.jpg'
+      },
+      content: 'Salah satu ciri pemerintahan sekarang adalah, ketika negara semrawut dalam melaksanakan kebijakan selalu bilang, "ada pihak asing yang ingin menghancurkan Indonesia".\n\nOsang, asing mulu dah. Pertanyaannya adalah, itu ulah pihak asing atau pejabat negara yang inkompeten?',
+      likes: 86,
+      comments: 6,
+      reposts: 3,
+      views: 1
+    },
+    {
+      id: 2,
+      user: {
+        username: 'vinchenstaa',
+        time: '11 jam',
+        avatar: 'assets/profile.jpg'
+      },
+      content: 'Gengs.\nKemarin gw pulang naik mrt sekitar jam 20.30 an\n\nDan\nGw baru ngeh per bulan juni ini, kalau udah larut di stasiun nya di puterin musik ya?!\n((Puteriinnn!!!)))\nBukan gimana sih,\nMasalahnya kemarin lagu yang diputerin lagu ave maria.\n\nSemoga aja ada yg "ribet" abis ini.',
+      likes: 111,
+      comments: 67,
+      reposts: 2,
+      views: 3
+    },
+    {
+      id: 3,
+      user: {
+        username: 'aniesbaswedan',
+        time: '16 jam',
+        avatar: 'assets/profile.jpg'
+      },
+      content: '[LIVE] Pelaksanaan shalat Iduladha 1446 H di Masjid Agung Al Azhar Jakarta bersama khatib Anies Rasyid Baswedan.',
+      image: 'https://via.placeholder.com/400x200/222222/FFFFFF?text=Post+Image',
+      likes: 2500,
+      comments: 300,
+      reposts: 150,
+      views: 5000
+    }
+  ];
+
   return (
-    <>
-      <main className="main-content">
-        <div className="main-content-header">
-          <h1 className="main-content-title">Main Content One</h1>
-        </div>
-        <div className="main-content-body">
-          <p>This is the first main content area.</p>
-          <p>Here you can add more details or components as needed.</p>
-        </div>
-        <div className="main-content-footer">
-          <p>Footer for Main Content One</p>
-        </div>
-      </main>
-    </>
+    <div className="main-content">
+      <div className="main-content-header">
+      </div>
+
+      {posts.map(post => (
+        <ThreadPost key={post.id} post={post} />
+      ))}
+    </div>
   );
 };
 
-export default MainContentOne;
+export default MainContent;

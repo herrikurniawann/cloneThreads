@@ -109,8 +109,102 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 60%;
+  width: 50%;
   background-color: #181818;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: 4rem auto auto auto;
+}
+
+.main-content-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main-content-header img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+.thread-post {
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.post-info {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #e0e0e0;
+}
+
+.time {
+  color: #888;
+  font-size: 14px;
+}
+
+.post-text {
+  margin-left: 50px;
+  line-height: 1.5;
+  color: #f0f0f0;
+  white-space: pre-wrap;
+}
+
+.post-image-container {
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-actions {
+  margin-top: 15px;
+  margin-left: 50px;
+  color: #888;
+  display: flex;
+  gap: 25px;
+}
+
+.post-actions span {
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.post-actions span:hover {
+  color: #fff;
 }
